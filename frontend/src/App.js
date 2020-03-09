@@ -1,10 +1,21 @@
 import React from 'react'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import Category from './components/category'
+
 
 function App () {
   return (
-    <div>
-      <h1>Isobar - Challenge!</h1>
-    </div>
+    <Router>
+      <Switch>
+        <Route path="/categories" component={Category}>
+        </Route>
+      </Switch>
+    </Router>
   )
 }
 
