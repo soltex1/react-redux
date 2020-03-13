@@ -1,8 +1,12 @@
 import { combineReducers } from 'redux'
-import categories from './categories'
+import category from './category'
+import comment from './comment'
+import post from './post'
 
 const reducers = combineReducers({
-  categories
+  categories: category,
+  comments: comment,
+  posts: post
 })
 
 export default reducers
